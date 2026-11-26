@@ -1,6 +1,6 @@
 {
   "files": {
-    ".github/workflows/verify.yml": "cde3098822d711a11894a4361e798f1ff4a5c6b5405f9b45fc3d0477c0ae27de",
+    ".github/workflows/verify.yml": "87f68c8b18cf3611cc8afa8fd99b43ae01d382add64ec2acbb1ffb157ef0e962",
     ".gitignore": "3e8079d684360e49be38a12ad38ee6c2858af55121915a2793278360526c0df6",
     "CITATION.cff": "9a2b22bea5c0d77d16bb1e5542bd49415056a493b890851e154353bea81f3d7a",
     "LICENSE-CODE": "226a51384c992882d3f8bf6aab6bbe0151ee6e1a9907aee2185317430123e985",
