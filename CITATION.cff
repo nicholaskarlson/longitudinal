@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this public companion and its exact release or commit when using the synthetic teaching data."
+title: "Longitudinal Reasoning with Statistics: Public Companion"
+type: dataset
+authors:
+  - family-names: Karlson
+    given-names: Nicholas Elliott
+version: 0.1.0
+date-released: 2026-11-26
+url: "https://github.com/nicholaskarlson/longitudinal"
+repository-code: "https://github.com/nicholaskarlson/longitudinal"
+license: CC-BY-4.0
+abstract: "Synthetic Tonmick World v1.0.0 ordinary observed anchor, dictionary, and checked longitudinal teaching examples. Example code is separately MIT licensed."

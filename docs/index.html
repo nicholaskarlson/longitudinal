@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Synthetic longitudinal teaching data and independently checkable examples for Book 14.">
+<title>Longitudinal Reasoning with Statistics · Public companion</title>
+<style>
+  :root { color-scheme: light; --ink:#17303d; --muted:#4d6370; --paper:#f6f3ea; --line:#c8d8d9; --deep:#0c3744; --teal:#0b7073; --gold:#c48a30; }
+  * { box-sizing:border-box; }
+  body { margin:0; font: 17px/1.62 system-ui,-apple-system,Segoe UI,sans-serif; color:var(--ink); background:var(--paper); }
+  a { color:#075f68; text-underline-offset:3px; }
+  a:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+  .hero { background:linear-gradient(130deg,#092d3d,#125465); color:white; padding:4rem max(24px,calc((100vw - 1030px)/2)) 4.6rem; }
+  .eyebrow { color:#acdada; letter-spacing:.12em; text-transform:uppercase; font-weight:700; font-size:.77rem; }
+  h1 { font: 700 clamp(2.5rem,6vw,4.7rem)/1.04 Georgia,serif; max-width:850px; margin:.45em 0 .3em; letter-spacing:-.025em; }
+  .hero p { max-width:760px; color:#e6f0eb; font-size:1.13rem; }
+  .hero a { color:#fff; }
+  .badge { display:inline-block; margin:.7rem .7rem 0 0; padding:.42rem .85rem; border:1px solid #a2ccca; border-radius:30px; color:#e9f6f3; font-size:.88rem; }
+  main { max-width:1030px; padding:3.2rem 24px 5rem; margin:auto; }
+  h2 { font:700 clamp(1.7rem,3vw,2.25rem)/1.18 Georgia,serif; margin:0 0 1rem; }
+  h3 { margin:.25rem 0 .4rem; font-size:1.1rem; }
+  section { margin:0 0 3.3rem; }
+  .lead { font-size:1.13rem; max-width:790px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; }
+  .card { padding:1.4rem; border:1px solid var(--line); background:#fff; border-radius:10px; box-shadow:0 4px 17px #0c37440a; }
+  .number { font:700 2.1rem/1 Georgia,serif; color:var(--teal); margin:0 0 .7rem; }
+  .card p { margin:.4rem 0 0; }
+  .table-wrap { overflow-x:auto; background:white; border:1px solid var(--line); border-radius:10px; }
+  table { border-collapse:collapse; width:100%; min-width:620px; }
+  th,td { padding:.9rem 1.1rem; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; }
+  th { background:#e8f0ee; font-size:.85rem; text-transform:uppercase; letter-spacing:.05em; }
+  tbody tr:last-child td { border:0; }
+  code { font-size:.9em; }
+  pre { overflow:auto; background:#102f3a; color:#edf5ef; padding:1.1rem 1.4rem; border-radius:9px; }
+  .note { background:#e9f0ec; border-left:4px solid var(--teal); padding:1rem 1.35rem; }
+  footer { border-top:1px solid var(--line); color:var(--muted); padding:1.6rem 24px; max-width:1030px; margin:auto; font-size:.9rem; }
+  @media(max-width:600px) { .hero { padding:3rem 24px 3.3rem; } main { padding-top:2.3rem; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="eyebrow">NEKpress Research · Book 14 · public companion</div>
+  <h1>Longitudinal Reasoning with Statistics</h1>
+  <p>Follow a fictional college system through surveys, changing scores, and competing exits. Download the ordinary observed records, inspect the design, and check two worked calculations three ways.</p>
+  <span class="badge">Synthetic teaching data</span><span class="badge">World v1.0.0 anchor</span><span class="badge">Book in development</span>
+</header>
+<main>
+  <section aria-labelledby="start">
+    <h2 id="start">A usable starting point</h2>
+    <p class="lead">The six CSVs below are byte-identical to the frozen Book 14 input. This site exposes the observation layer and a dictionary of its columns; it does not represent real students or publish simulator truth.</p>
+    <div class="grid">
+      <div class="card"><div class="number">1,600</div><h3>Sampled invitees</h3><p>Participant and sampling-design records include people without a baseline survey.</p></div>
+      <div class="card"><div class="number">1,219</div><h3>Baseline respondents</h3><p>Matched to a registry row and three scheduled follow-up rows per person.</p></div>
+      <div class="card"><div class="number">3</div><h3>Independent routes</h3><p>Python standard library, NumPy and base R reproduce the two public examples.</p></div>
+    </div>
+  </section>
+  <section aria-labelledby="files">
+    <h2 id="files">Download the observed anchor</h2>
+    <div class="table-wrap"><table><thead><tr><th>File</th><th>Rows</th><th>Use</th></tr></thead><tbody>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/participants.csv">participants.csv</a></td><td>1,600</td><td>Invitees, selection weights and replicates</td></tr>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/baseline.csv">baseline.csv</a></td><td>1,219</td><td>Baseline item responses and offer</td></tr>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/followup_long.csv">followup_long.csv</a></td><td>3,657</td><td>Month 3, 6 and 12 surveys</td></tr>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/registry.csv">registry.csv</a></td><td>1,219</td><td>Exit types, times and recorded outcomes</td></tr>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/design_colleges.csv">design_colleges.csv</a></td><td>40</td><td>College sampling and strata</td></tr>
+      <tr><td><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/anchor/design_joint_pi.csv">design_joint_pi.csv</a></td><td>180</td><td>Joint college inclusion probabilities</td></tr>
+    </tbody></table></div>
+    <p><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/DICTIONARY.csv">Column dictionary</a> · <a href="https://github.com/nicholaskarlson/longitudinal/blob/main/data/SHA256SUMS.txt">SHA-256 hashes</a> · <a href="https://github.com/nicholaskarlson/longitudinal/blob/main/SOURCE.md">Provenance and release boundary</a></p>
+  </section>
+  <section aria-labelledby="checks">
+    <h2 id="checks">Check the teaching calculations</h2>
+    <p>In the unoffered group, 256 people have scorable stress items at all four waves. Their mean paired baseline-to-month-12 change is <strong>+0.01484375</strong> on the stated score scale. Among all 1,219 baseline respondents, the registry records <strong>173 withdrawals</strong>, <strong>43 transfers</strong>, and <strong>11 consent-withdrawal censorings</strong>. Exact-time competing-risk accounting gives a 12-month withdrawal cumulative incidence of about <strong>0.14254</strong>.</p>
+    <pre><code>python3 -m pip install -r requirements-local.txt
+python3 scripts/check_release.py
+python3 scripts/verify.py --base-r</code></pre>
+    <p>See the <a href="https://github.com/nicholaskarlson/longitudinal">repository README and code</a> for the scoring and event-time rules. The values are descriptions of selected fictional records. The paired result does not adjust for missingness or sampling. The event calculation treats transfer as a competing outcome and consent withdrawal as censoring.</p>
+    <div class="note"><strong>Claim ceiling:</strong> matching checksums establish data identity, and matching routes establish agreement for the specified arithmetic. Neither establishes causal identification, validity of measurement, independent censoring, or real-world generalizability.</div>
+  </section>
+  <section aria-labelledby="next">
+    <h2 id="next">Explore and correct</h2>
+    <p><a href="https://github.com/nicholaskarlson/longitudinal/blob/main/UNIT_MAP.md">See the twelve-unit map</a> to distinguish released source fields from separate invented exercises. If you find a discrepancy, <a href="https://github.com/nicholaskarlson/longitudinal/issues">report an issue</a> with the exact file checksum and commit. Reuse terms are in <a href="https://github.com/nicholaskarlson/longitudinal/blob/main/LICENSES.md">LICENSES.md</a>.</p>
+  </section>
+</main>
+<footer>© 2026 Nicholas Elliott Karlson. Synthetic Tonmick World v1.0.0 teaching anchor. Data and documentation CC BY 4.0; code MIT.</footer>
+</body></html>

@@ -1,0 +1,30 @@
+{
+  "files": {
+    ".github/workflows/verify.yml": "cde3098822d711a11894a4361e798f1ff4a5c6b5405f9b45fc3d0477c0ae27de",
+    ".gitignore": "3e8079d684360e49be38a12ad38ee6c2858af55121915a2793278360526c0df6",
+    "CITATION.cff": "9a2b22bea5c0d77d16bb1e5542bd49415056a493b890851e154353bea81f3d7a",
+    "LICENSE-CODE": "226a51384c992882d3f8bf6aab6bbe0151ee6e1a9907aee2185317430123e985",
+    "LICENSES.md": "217c8cf321ca3175a7d37e3aecbe10ceca9c05c74153449aaf6ee9ec8c2151af",
+    "README.md": "6f519e77ed628eb536c66a4139ea589fc0d1155a62e7456b8554ee4243817cd5",
+    "SOURCE.md": "fb8654bb30372ac559d503a461adedf6af5f0eeba6e8971931d58176e1f0993d",
+    "UNIT_MAP.md": "f5a193d663e91e2e44db3e39fa1e6c67cf00d7fa2517f707b752d5ba39e41f95",
+    "data/DICTIONARY.csv": "80e449bc2758ab2c3525e4aac30109982520cd0597884a2d22f89548d9b42174",
+    "data/SHA256SUMS.txt": "c114d3b4bf3caf2e9db72e97d1a7590a643594a757a374214e4479e2265d418a",
+    "data/anchor/baseline.csv": "8ba580b70745f3e1cda663cf0c9a277a4cedfaccb870f885ffa441f036086850",
+    "data/anchor/design_colleges.csv": "193c0356b22789d4d937146cfa69aaf1e1716065586477c646cbbc7eed8ddda1",
+    "data/anchor/design_joint_pi.csv": "3d5641eac36deb854fdd85bdc7eecce21d0ab2f89634d4b9e93b200fc0b4598e",
+    "data/anchor/followup_long.csv": "ab385f2fd760d5f5dd0ef75f0075b91c6e82a98270d329078c9eadcb917a972f",
+    "data/anchor/participants.csv": "3708dda311ac5388800ade6fc6c73c31f9ed6b6d52c02bbf2be256ddd740dd2e",
+    "data/anchor/registry.csv": "df7761f29400ac18ea7ec6ab4f40a985e29796f12f1414e089d2781412afcd47",
+    "docs/.nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "docs/index.html": "375ac2b9cc105a68d50861a4673f2fa3f9cdd9b4fd07a57f4bebfc80bacb08f2",
+    "examples/base_r.R": "d704cdbbd6e831ffbc4e225732b83130b043a534c25535cbefa04f7d6ca88ca6",
+    "examples/numpy_route.py": "efaee4104e4bffebbc1d0db65d6f12237cc1087319f88378f4c60ffe1a6048c1",
+    "examples/stdlib_route.py": "2de7a2d89e1132f84f1e5d259bdcfc0cc8a7112f91e0763c3a66192ee15fc91d",
+    "expected/results.json": "925832bf801428687077a16a390960b08177fda464d923ebe50bece6e7c93244",
+    "requirements-local.txt": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8",
+    "scripts/check_release.py": "2d0c39920f5880c9dd86cc37bdb9c0e89d1adcdd07e014c0c78380ac249611d1",
+    "scripts/verify.py": "0f9f86c9ec92aedfebe2a378a48ac206ddc2ab1949307adfd2191d514218ba7f"
+  },
+  "release": "book14-public-companion-v0.1.0"
+}

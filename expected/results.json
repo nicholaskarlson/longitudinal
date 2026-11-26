@@ -1,0 +1,21 @@
+{
+  "baseline_respondents": 1219,
+  "cif_transfer_12": 0.03542885911876109,
+  "cif_withdrawal_12": 0.14254242146281482,
+  "consent_censored_12": 11,
+  "event_free_12": 0.822028719418424,
+  "four_scored": 256,
+  "paired_difference": 0.01484375,
+  "returned_0": 610,
+  "returned_12": 394,
+  "returned_3": 506,
+  "returned_6": 464,
+  "sampled_invitees": 1600,
+  "scored_0": 608,
+  "scored_12": 389,
+  "scored_3": 501,
+  "scored_6": 415,
+  "transfers_12": 43,
+  "unoffered": 610,
+  "withdrawals_12": 173
+}
